@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b4m1v47uv7q8j"]
+
+[ext_resource type="Script" uid="uid://daelv44x10k2k" path="res://script/zona_de_morte.gd" id="1_yac4w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ebum8"]
+size = Vector2(674, 61)
+
+[node name="zona de morte" type="Area2D" unique_id=1980237014 groups=["player"]]
+script = ExtResource("1_yac4w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1736824115 groups=["player"]]
+position = Vector2(334, 191)
+shape = SubResource("RectangleShape2D_ebum8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

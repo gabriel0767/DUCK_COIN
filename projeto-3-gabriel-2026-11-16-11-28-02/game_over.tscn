@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b71l3ehlo25aq"]
+
+[ext_resource type="Script" uid="uid://y8yf5qagn32m" path="res://game_over.gd" id="1_y26ei"]
+
+[node name="game over" type="Control" unique_id=1278323777]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y26ei")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1167070333]
+layout_mode = 0
+offset_right = 430.0
+offset_bottom = 207.0
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1091900928]
+layout_mode = 0
+offset_right = 431.0
+offset_bottom = 209.0
+
+[node name="Button" type="Button" parent="CenterContainer" unique_id=390192933]
+layout_mode = 2
+text = "RESTART"
+
+[connection signal="pressed" from="CenterContainer/Button" to="." method="_on_button_pressed"]

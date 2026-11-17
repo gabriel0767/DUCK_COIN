@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://com7nfyuuskji"]
+
+[ext_resource type="Script" uid="uid://htj2d2coktrd" path="res://script/contador.gd" id="1_33s27"]
+[ext_resource type="AudioStream" uid="uid://dfgxv1lf12prw" path="res://assets/1_Coins.ogg" id="2_nydgn"]
+
+[node name="contador" type="Label" unique_id=1497270115 groups=["hud"]]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "moedas : 0"
+script = ExtResource("1_33s27")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=613711865]
+stream = ExtResource("2_nydgn")
+volume_db = 24.0
